@@ -26,6 +26,21 @@ public class App {
         System.out.println(phonenumber);
         System.out.println(adreass);
         System.out.println(numberPiso);
+        //Operadores
+        int number1 =10, number2 =2;
+        float number3= 3.9f;
+        int result = number1 +number2;
+        int result2= number1 + (int)number3;
+        System.out.println(result);
+        System.out.println(result2);
+    
+
+        String firstName = "Luis";
+        String nombreGood = "Luis";
+
+        String mensaje = firstName == nombreGood ? "Son iguales" :"Son distintos";
+
+        System.out.println(mensaje);
 
     }
 }

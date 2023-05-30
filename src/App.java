@@ -9,7 +9,15 @@ public class App {
          * 
          */
         int contador = 0;
-        System.out.print(contador);
+        boolean login = false;
+        float versionCsgo= 1.6f;
+        String letra = "a";
+        String name= "Luis";
+
+        System.out.println(contador);
+        System.out.println(name);
+        System.out.println(login);
+        System.out.println(versionCsgo);
 
     }
 }

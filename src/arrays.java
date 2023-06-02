@@ -9,5 +9,10 @@ public class arrays {
         for (String string : nombre) {
             System.out.println(string);
         }
+        int [] arrays1 = {1,2,3,4,5};
+        System.out.println(arrays1.length);
+        for (int i : arrays1) {
+            System.out.println(i);
+        }
     }
 }

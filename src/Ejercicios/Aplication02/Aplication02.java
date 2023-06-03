@@ -4,18 +4,19 @@ import java.util.Scanner;
 
 public class Aplication02 {
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese una palabra");
-        String texto = leer.nextLine();
+        try (Scanner leer = new Scanner(System.in)) {
+            System.out.println("Ingrese una palabra");
+            String texto = leer.nextLine();
 
-        if (palindromoInJava(texto)) {
-            System.out.println("********************");
-            System.out.printf("Esta palabra:%s es un palindromo \n", texto);
-            System.out.println("********************");
-        } else {
-            System.out.println("********************");
-            System.out.printf("Esta palabra:%s NO es un palindromo \n", texto);
-            System.out.println("********************");
+            if (palindromoInJava(texto)) {
+                System.out.println("********************");
+                System.out.printf("Esta palabra:%s es un palindromo \n", texto);
+                System.out.println("********************");
+            } else {
+                System.out.println("********************");
+                System.out.printf("Esta palabra:%s NO es un palindromo \n", texto);
+                System.out.println("********************");
+            }
         }
     }
 

@@ -1,24 +1,22 @@
-package Aplication.Aplication01;
+package Ejercicios.Aplication01;
 
 import java.util.Scanner;
 
-import javax.print.FlavorException;
-
 public class Aplication01 {
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
+        try (Scanner leer = new Scanner(System.in)) {
+            System.out.println("ingrese un numero: ");
 
-        System.out.println("ingrese un numero: ");
+            int numero = leer.nextInt();
 
-        int numero = leer.nextInt();
+            if(esPrimo(numero)){
+                System.out.println("*******************");
+                System.out.println("Es numero primo ");
+            }else{
+                System.out.println("*******************");
+                System.out.println("No es  numero primo ");
 
-        if(esPrimo(numero)){
-            System.out.println("*******************");
-            System.out.println("Es numero primo ");
-        }else{
-            System.out.println("*******************");
-            System.out.println("No es  numero primo ");
-
+            }
         }
     }
 
@@ -40,7 +38,7 @@ public class Aplication01 {
                 contador++;
             }
         }  
-        
+
         return contador == 0;
     }
 }

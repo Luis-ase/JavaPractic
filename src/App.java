@@ -8,7 +8,8 @@ public class App {
          * Booleanos
          * 
          */
-        // int contador = 100;
+         int contador = 100;
+         System.out.println(contador);
         
     }
 }
